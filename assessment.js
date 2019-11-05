@@ -75,7 +75,7 @@ const answers =[
  */
 function assessment (userName) {
   let sumOfCharCode = 0;
-  for (let i = 0; i < userName.length; i++) {
+  for (let i = 0; i < answers.length; i++) {
     sumOfCharCode += userName.charCodeAt(i);
   }
   const index = sumOfCharCode % userName.length;
