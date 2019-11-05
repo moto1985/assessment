@@ -75,10 +75,10 @@ const answers =[
  */
 function assessment (userName) {
   let sumOfCharCode = 0;
-  for (let i = 0; i < answers.length; i++) {
+  for (let i = 0; i < userName.length; i++) {
     sumOfCharCode += userName.charCodeAt(i);
   }
-  const index = sumOfCharCode % userName.length;
+  const index = sumOfCharCode % answers.length;
   let result = answers[index];
   result = result.replace(/\{userName\}/g,userName);
 
