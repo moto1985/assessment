@@ -90,5 +90,5 @@ console.assert(
 );
 console.assert(
   assessment('太郎') === assessment('太郎'),
-  '名前が同じですが診断結果が異なります。'
+  '名前が同じですが診断結果が異なる。'
 );
